@@ -14,10 +14,504 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
     <title>Luz Vivian Cantos | Portfolio</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="loader" id="loader">
+      <div class="loader__ring"></div>
+      <div class="loader__label">Loading portfolio</div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="Luz Vivian Cantos home">LVC</a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="socials desktop-only">
+          <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">G</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="mobile-nav" id="mobileNav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="ambient ambient-one"></div>
+        <div class="ambient ambient-two"></div>
+        <div class="ambient ambient-three"></div>
+        <div class="grid-pattern"></div>
+
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <div class="eyebrow-wrap">
+              <span class="eyebrow">Available for select projects</span>
+            </div>
+
+            <h1>Designing digital experiences that make an impact.</h1>
+
+            <p>
+              I’m Luz Vivian Cantos, a multidisciplinary product designer and frontend developer
+              creating calm, polished digital experiences that feel as intentional as they are useful.
+            </p>
+
+            <div class="cta-row">
+              <a href="#projects" class="btn btn-primary">Explore my work <span>→</span></a>
+              <a href="#contact" class="btn btn-secondary">Let&apos;s connect</a>
+            </div>
+
+            <div class="stats-row">
+              <div>
+                <strong>5+</strong>
+                <span>Years crafting digital experiences</span>
+              </div>
+              <div>
+                <strong>18</strong>
+                <span>Projects delivered</span>
+              </div>
+              <div>
+                <strong>8</strong>
+                <span>Creative collaborations</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="portrait-card">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80"
+                alt="Portrait of Luz Vivian Cantos"
+              />
+            </div>
+
+            <div class="status-card">
+              <div>
+                <small>Currently</small>
+                <h3>Open to meaningful collaborations</h3>
+              </div>
+              <span class="status-dot"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <span>Scroll</span>
+          <i></i>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-label reveal">About me</div>
+
+          <div class="about-grid">
+            <div class="about-image reveal">
+              <img
+                src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1000&q=80"
+                alt="Luz Vivian Cantos profile"
+              />
+            </div>
+
+            <div class="about-content reveal">
+              <h2>Thoughtful design, technical clarity, and calm execution.</h2>
+              <p>
+                I help brands and teams turn ideas into refined product experiences, blending
+                strategy, interface design, and frontend craft to create work that feels premium,
+                intuitive, and human-centered.
+              </p>
+
+              <div class="mini-cards">
+                <article>
+                  <div class="mini-icon">✦</div>
+                  <h3>Strategic design</h3>
+                  <p>I connect user needs, business goals, and visual direction into coherent experiences.</p>
+                </article>
+                <article>
+                  <div class="mini-icon">▣</div>
+                  <h3>Design systems</h3>
+                  <p>I build scalable UI foundations that keep products consistent and easy to evolve.</p>
+                </article>
+                <article>
+                  <div class="mini-icon">⌘</div>
+                  <h3>Frontend craft</h3>
+                  <p>I translate interfaces into responsive, accessible experiences with thoughtful motion.</p>
+                </article>
+              </div>
+
+              <div class="mission-card">
+                <h3>My approach</h3>
+                <p>
+                  My mission is to design digital products that balance clarity, emotion, and usefulness —
+                  making complex ideas feel simple, calm, and compelling from the first interaction onward.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-label reveal">Skills</div>
+          <h2 class="section-title reveal">Creative systems built for clarity, trust, and momentum.</h2>
+
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <div class="skill-head">
+                <h3>Product Design</h3>
+                <span>6 tools</span>
+              </div>
+              <div class="tag-wrap">
+                <span>UX Strategy</span>
+                <span>Wireframes</span>
+                <span>Design Thinking</span>
+                <span>Prototyping</span>
+                <span>User Flows</span>
+                <span>Interaction Design</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-head">
+                <h3>Frontend Development</h3>
+                <span>6 tools</span>
+              </div>
+              <div class="tag-wrap">
+                <span>React</span>
+                <span>Vite</span>
+                <span>JavaScript</span>
+                <span>TypeScript</span>
+                <span>Tailwind CSS</span>
+                <span>Responsive UI</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-head">
+                <h3>Brand &amp; Visual Design</h3>
+                <span>6 tools</span>
+              </div>
+              <div class="tag-wrap">
+                <span>Brand Direction</span>
+                <span>Art Direction</span>
+                <span>Typography</span>
+                <span>Moodboards</span>
+                <span>Creative Systems</span>
+                <span>Interface Design</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-head">
+                <h3>Research &amp; Insight</h3>
+                <span>6 tools</span>
+              </div>
+              <div class="tag-wrap">
+                <span>User Research</span>
+                <span>Empathy Mapping</span>
+                <span>Feature Prioritization</span>
+                <span>Testing</span>
+                <span>UX Audits</span>
+                <span>Analytics Review</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-head">
+                <h3>Tools &amp; Workflow</h3>
+                <span>6 tools</span>
+              </div>
+              <div class="tag-wrap">
+                <span>Figma</span>
+                <span>GitHub</span>
+                <span>Notion</span>
+                <span>Vercel</span>
+                <span>Framer</span>
+                <span>Canva</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-head">
+                <h3>Content &amp; Experience</h3>
+                <span>6 tools</span>
+              </div>
+              <div class="tag-wrap">
+                <span>Storytelling</span>
+                <span>Landing Pages</span>
+                <span>Campaign Design</span>
+                <span>Personal Branding</span>
+                <span>Content Structure</span>
+                <span>Accessibility</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-header reveal">
+            <div>
+              <div class="section-label">Projects</div>
+              <h2 class="section-title">Selected work across digital product and brand experiences.</h2>
+            </div>
+            <div class="filter-row" aria-label="Project filters">
+              <button class="filter active" type="button">All</button>
+              <button class="filter" type="button">Brand Experience</button>
+              <button class="filter" type="button">E-commerce</button>
+              <button class="filter" type="button">Dashboard</button>
+            </div>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Asteria Studio project" />
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="tag">Brand Experience</span>
+                  <span class="rating">★ 4.9</span>
+                </div>
+                <h3>Asteria Studio</h3>
+                <p>
+                  A refined digital presence for a creative studio, designed to communicate premium
+                  services, portfolio narratives, and calm visual storytelling.
+                </p>
+                <div class="tag-wrap small-tags">
+                  <span>React</span>
+                  <span>Tailwind</span>
+                  <span>Framer Motion</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="btn btn-primary btn-small">View project</a>
+                  <a href="#" class="btn btn-secondary btn-small">Source code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <img src="https://images.unsplash.com/photo-1516321165247-4aa89a48be28?auto=format&fit=crop&w=1200&q=80" alt="Northstar Commerce project" />
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="tag">E-commerce</span>
+                  <span class="rating">★ 4.8</span>
+                </div>
+                <h3>Northstar Commerce</h3>
+                <p>
+                  A conversion-focused storefront concept centered on polished product storytelling, trust
+                  signals, and a premium mobile-first experience.
+                </p>
+                <div class="tag-wrap small-tags">
+                  <span>UX Strategy</span>
+                  <span>Figma</span>
+                  <span>UI Design</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="btn btn-primary btn-small">View project</a>
+                  <a href="#" class="btn btn-secondary btn-small">Source code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" alt="Harbor Analytics project" />
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="tag">Dashboard</span>
+                  <span class="rating">★ 5.0</span>
+                </div>
+                <h3>Harbor Analytics</h3>
+                <p>
+                  A modern reporting dashboard concept built to surface metrics clearly, reduce cognitive
+                  load, and support confident decision-making.
+                </p>
+                <div class="tag-wrap small-tags">
+                  <span>React</span>
+                  <span>Design System</span>
+                  <span>Product Thinking</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="btn btn-primary btn-small">View project</a>
+                  <a href="#" class="btn btn-secondary btn-small">Source code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-label reveal">Experience</div>
+          <h2 class="section-title reveal">A practice grounded in product thinking, visual design, and implementation.</h2>
+
+          <div class="timeline-grid">
+            <div class="timeline-column">
+              <article class="timeline-card reveal">
+                <div class="timeline-head">
+                  <div>
+                    <small>Independent Practice</small>
+                    <h3>Product Designer &amp; Frontend Developer</h3>
+                  </div>
+                  <span>2022 — Present</span>
+                </div>
+                <p>
+                  Design and develop digital experiences for founders, small businesses, and purpose-driven
+                  brands seeking elevated product and marketing touchpoints.
+                </p>
+              </article>
+
+              <article class="timeline-card reveal">
+                <div class="timeline-head">
+                  <div>
+                    <small>Creative Digital Studio</small>
+                    <h3>UI / UX Designer</h3>
+                  </div>
+                  <span>2020 — 2022</span>
+                </div>
+                <p>
+                  Led interface strategy, visual direction, and product design refinement for brand websites,
+                  feature launches, and customer-facing experiences.
+                </p>
+              </article>
+            </div>
+
+            <div class="timeline-column">
+              <article class="timeline-card reveal">
+                <div class="timeline-head">
+                  <div>
+                    <small>Ongoing</small>
+                    <h3>Visual Communication &amp; Digital Design</h3>
+                  </div>
+                  <span>Self-directed</span>
+                </div>
+                <p>
+                  Focused on interface design, branding, visual systems, and digital storytelling through
+                  practical product and portfolio work.
+                </p>
+              </article>
+
+              <article class="timeline-card reveal">
+                <div class="timeline-head">
+                  <div>
+                    <small>2021</small>
+                    <h3>Frontend &amp; Product Design Foundations</h3>
+                  </div>
+                  <span>Hands-on</span>
+                </div>
+                <p>
+                  Developed skills in responsive design, accessibility, modern frontend workflows, and
+                  product-oriented design systems.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <div class="contact-panel reveal">
+            <div class="contact-copy">
+              <div class="section-label">Contact</div>
+              <h2>Have a project in mind?</h2>
+              <p>
+                I&apos;m available for design collaborations, product thinking, and digital experiences that feel
+                thoughtful, clear, and memorable.
+              </p>
+
+              <div class="contact-list">
+                <a href="mailto:hello@luzviviancantos.dev">hello@luzviviancantos.dev</a>
+                <span>Remote / Peru</span>
+              </div>
+            </div>
+
+            <form id="contactForm" novalidate>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" placeholder="Your name" />
+                  <small class="error" data-error-for="name"></small>
+                </div>
+
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="you@example.com" />
+                  <small class="error" data-error-for="email"></small>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" placeholder="Project inquiry" />
+                <small class="error" data-error-for="subject"></small>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea, timeline, and goals..."></textarea>
+                <small class="error" data-error-for="message"></small>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Send message</button>
+                <a href="mailto:hello@luzviviancantos.dev" class="btn btn-secondary">Email directly</a>
+              </div>
+
+              <p class="success-message" id="successMessage">Thanks! Your message draft has been prepared in your mail app.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="#home" class="brand">LVC</a>
+          <p>© <span id="year"></span> Luz Vivian Cantos.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="socials">
+          <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">G</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
