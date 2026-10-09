@@ -1,0 +1,95 @@
+# Luz Vivian Cantos Portfolio
+
+A modern, cinematic personal portfolio built with React, Vite, Tailwind CSS, and Framer Motion. The project follows the requested storm-and-ocean design direction with a premium dark aesthetic, responsive layout, animated sections, and a polished contact experience.
+
+## Features
+
+- Responsive single-page portfolio with home, about, skills, projects, experience, and contact sections
+- Ocean-inspired dark UI palette using storm white, seafoam, muted teal, and deep navy tones
+- Scroll-triggered motion, staggered reveals, and subtle ambient background motion
+- Project filtering and interactive call-to-action buttons
+- Functional contact form validation with a mailto handoff for real-world sending through a mail client
+- Mobile-first navigation with a slide-down menu
+- Production-ready Vite build configuration
+
+## Tech stack
+
+- React + Vite
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+
+## Local development
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/Luggy31/luz-vivian-cantos-portfolio.git
+   cd luz-vivian-cantos-portfolio
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open the local URL printed in the CLI, usually `http://localhost:5173`.
+
+## Production build
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Deployment
+
+### Vercel
+
+1. Push the project to GitHub.
+2. Import the repository into Vercel.
+3. Set the framework to `Vite` and use the default build settings.
+4. Deploy.
+
+### Netlify
+
+1. Push the project to GitHub.
+2. Create a new site in Netlify from the repository.
+3. Use the following build settings:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+4. Deploy.
+
+### GitHub Pages
+
+For a GitHub Pages deployment, configure the Vite base path if needed and use a static hosting workflow. This project is already configured for a standard Vite deployment and will work well with static hosts once the build is generated.
+
+## Contact form note
+
+The form validates locally and opens the user’s configured mail client to send the message. For a fully automated production form, connect it to a service such as Formspree, EmailJS, or a serverless email endpoint and replace the `mailto:` handoff with that service's API call.
+
+## Customization
+
+To update your portfolio details, edit the content in:
+
+- `src/data/portfolioData.js`
+
+This central file holds the portfolio name, headline, bio, skill groups, projects, experience, and social links.
+
+## Files of interest
+
+- `src/App.jsx` — page structure and UI
+- `src/data/portfolioData.js` — portfolio content model
+- `src/index.css` — palette, ambient effects, and core styling
+- `public/_redirects` — Netlify route fallback
+- `vercel.json` — Vercel route fallback
+
+## License
+
+MIT
